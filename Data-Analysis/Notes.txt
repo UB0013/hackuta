@@ -1,0 +1,63 @@
+python -m venv .venv
+.venv\Scripts\activate
+python -m pip install --upgrade pip
+pip install -r requirements.txt
+python app.py
+
+To Do----
+
+Add undo button
+front end map
+file explorer
+chat widget
+graphical visualizations
+eleven lab api
+
+Queries
+
+Who is the top-scoring student? (Highest GPA/Mark)
+Which students have a GPA above 3.5?
+List all students on academic probation. (Assuming a status column)
+What is the average GPA of the whole student body?
+Who has the lowest GPA?
+Find students who have a perfect 4.0 GPA.
+Which students are graduating this year? (Assuming a GraduationYear or similar column)
+Show all students with a GPA between 2.5 and 3.0.
+
+  - - - - DRAFT WRITE QUERIES  - class_student_base_columns.xlsx  - - - - -   
+
+➕ Add column At_Risk = TRUE if Total_Score < 60.
+2	➕ Add column Pass_Fail = "Pass" if Total_Score ≥ 50 else "Fail".
+Add column Grade = "A/B/C/D/F" based on Total_Score thresholds (A ≥ 90, B ≥ 80, etc.).
+Add column Attendance_Flag = "Low" if Attendance_Percentage < 75
+
+Add column Email_Domain = RIGHT(Email, domain_part)
+
+Compute Total_Score = AVERAGE(Assignment_1, Assignment_2, Midterm_Score, Final_Exam_Score).
+ Compute Attendance_Percentage = (Classes_Attended / Total_Classes) × 100.
+Add column Improved = TRUE if Final_Exam_Score > Midterm_Score.
+Group by Gender and compute Average_Total_Score.
+Add column Score_Improved_Mid = TRUE if Midterm_2_Score > Midterm_1_Score.
+
+
+
+ - -- - - - class_student_base_columns.xlsx Description   - - -  - - - - - - - 
+
+
+This sheet contains class-level student performance data for a single course offering.
+Each row represents one student’s academic record, including scores, attendance, and identifying details.
+The dataset supports automated transformations and visual analytics such as grade computation, risk tagging, and performance improvement tracking.
+
+🧩 Column Descriptions
+Column	Description
+Student_ID	Unique identifier assigned to each student.
+Student_Name	Full name of the student for display or reference.
+Email	Official student email address used for validation or domain extraction.
+Gender	Student’s gender, used for demographic-based grouping or averages.
+Assignment_1	Score obtained in the first assignment.
+Assignment_2	Score obtained in the second assignment.
+Midterm_1_Score	Marks earned in the first midterm exam.
+Midterm_2_Score	Marks earned in the second midterm exam.
+Final_Exam_Score	Marks earned in the final exam for the course.
+Classes_Attended	Number of class sessions attended by the student.
+Total_Classes	Total number of class sessions held for the course.

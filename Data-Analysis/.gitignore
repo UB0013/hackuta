@@ -1,0 +1,30 @@
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Node modules
+node_modules/
+
+# Build directories
+build/
+dist/
+
+# IDE files
+.vscode/
+.idea/
+
+# Data files
+data.csv
+
+# Environment variables
+.env
+
+# OS generated files
+.DS_Store
+Thumbs.db
