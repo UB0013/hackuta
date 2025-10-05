@@ -61,3 +61,21 @@ Midterm_2_Score	Marks earned in the second midterm exam.
 Final_Exam_Score	Marks earned in the final exam for the course.
 Classes_Attended	Number of class sessions attended by the student.
 Total_Classes	Total number of class sessions held for the course.
+
+
+
+
+-- - - - Texas Universities Data  -  -  -    -  -  
+
+This sheet contains college-level academic and institutional data across multiple locations.
+Each row represents one college or campus, providing key metrics on enrollment, staffing, and graduation outcomes.
+The dataset supports geographic comparisons and performance analytics for higher education institutions.
+
+🧩 Column Descriptions
+Column	Description
+College_ID	Unique identifier assigned to each college.
+University_Name	Name of the parent university or system the college belongs to.
+Location	City or region where the college is located.
+Enrolled_Students	Total number of students currently enrolled.
+Faculty_Count	Total number of faculty members at the college.
+Graduation_Rate	Percentage of enrolled students who successfully graduate.
